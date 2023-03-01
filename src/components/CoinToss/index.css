@@ -1,0 +1,78 @@
+.forImage {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.forOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #f9d423, #e2a139);
+  overflow: auto;
+  flex-shrink: 1;
+}
+.forInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 50px 35px 50px 35px;
+  padding: 15px;
+  border-radius: 10px;
+  flex-grow: 1;
+
+  box-sizing: border-box;
+}
+.forHeader {
+  font-family: 'Roboto';
+  color: #a35200;
+  font-size: 36px;
+  text-align: center;
+}
+.forPara {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 0px;
+  text-align: center;
+}
+.forParaRes {
+  color: #475569;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 22px;
+}
+.forButton {
+  background-color: #e2a139;
+  padding: 15px;
+  border-radius: 10px;
+  color: #a35200;
+  font-weight: bold;
+  border-width: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.forDiv {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .forDiv {
+    flex-direction: row;
+  }
+  .forParaRes {
+    margin: 30px;
+  }
+
+  .forInner {
+    flex-grow: 0;
+  }
+  .forInner {
+    padding: 20px;
+  }
+  .forHeader {
+    font-size: 40px;
+  }
+}
